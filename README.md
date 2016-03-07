@@ -16,20 +16,20 @@ This repository contains my solutions to programming challenges that I solved.
 #### JavaScript
 * Built a script to create a [slide show](/JavaScript/Image-Slide-Show) of images of the solar system
 
-#### Python
-* Building a [SQLite database](/Python/Database-Using-Python) with Python
+#### Ruby
+* Building a sample applications with Ruby
 
 #### C\# 
 * Next course after Python
 * Test
 
 #### Team Projects
-* Live-Project after C# course
-* Code for Sacromento - [Bike and Walk Project](https://github.com/mrmichaelgallen/Portfolio-for-MichaelAllen/tree/master/Team-Projects/Code-for-America/Bike-Count)
+* Live-Project using C# in the .NET Framework
+* FFCN  
 
 #### Hackathons
-* Hack the Dot in Portland on November 12, 2015 - [Team Tiger](https://github.com/liztom/hippohaus)
-* Hack the Dot in Portland on February 4, 2016 - [Team Minnow](https://github.com/mrmichaelgallen/PersonalSpace-Rehab)
+* Hack the Dot in Portland on November 12, 2015 - (https://github.com/liztom/hippohaus)
+
 
 
 
