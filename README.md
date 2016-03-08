@@ -1,7 +1,7 @@
 ### A collection of coding creations by Kent Gray.
 ***
 
-//I love creating solutions to problems whether it is personal or technical. Learning and coding are a lot like running marathons, its hard work but well worth the reward. Learn more about my professional experience on [LinkedIn](https://www.linkedin.com/in/kentmgray). I also have a [blog](http://kentgray.me/) about my experience in the development community.
+I love creating solutions to problems whether it is personal or technical. Learning and coding are a lot like running marathons, its hard work but well worth the reward. Learn more about my professional experience on [LinkedIn](https://www.linkedin.com/in/kentmgray). I also have a [blog](http://kentgray.me/) about my experience in the development community.
 
 This repository contains my solutions to programming challenges that I solved. 
 
