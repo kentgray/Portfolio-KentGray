@@ -1,0 +1,131 @@
+Regular Expressions
+
+
+var regex = /this/;
+
+console.log( regex.test(string1)  );
+console.log( regex.test(string2)  );
+console.log( regex.test(string3)  );
+console.log( regex.test(string4)  );
+VM2420:9 false
+VM2420:10 false
+VM2420:11 true
+VM2420:12 false
+undefined
+var string1 = 'This is the longest.';
+var string2 = 'This is short.';
+var string3 = 'Moun Everest.';
+var string4 = 'This Sermon on the Mount';
+
+var regex = /this/i;
+
+console.log( regex.test(string1)  );
+console.log( regex.test(string2)  );
+console.log( regex.test(string3)  );
+console.log( regex.test(string4)  );
+VM2421:9 true
+VM2421:10 true
+VM2421:11 false
+VM2421:12 true
+undefined
+var string1 = 'This is the longest.';
+var string2 = 'This is short.';
+var string3 = 'Is this Mount Everest.';
+var string4 = 'This Sermon on the Mount';
+
+var regex = /this/i;
+
+console.log( regex.test(string1)  );
+console.log( regex.test(string2)  );
+console.log( regex.test(string3)  );
+console.log( regex.test(string4)  );
+VM2422:9 true
+VM2422:10 true
+VM2422:11 true
+VM2422:12 true
+undefined
+var string1 = 'This is the longest.';
+var string2 = 'This is short.';
+var string3 = 'Is this Mount Everest.';
+var string4 = 'This Sermon on the Mount';
+
+var regex = /^This/i;
+
+console.log( regex.test(string1)  );
+console.log( regex.test(string2)  );
+console.log( regex.test(string3)  );
+console.log( regex.test(string4)  );
+
+VM2427:9 true
+VM2427:10 true
+VM2427:11 false
+VM2427:12 true
+undefined
+var string1 = 'This is the longest.';
+var string2 = 'This is short.';
+var string3 = 'Is this Mount Everest.';
+var string4 = 'This Sermon on the Mount';
+
+var regex = /ever$/i;
+
+console.log( regex.test(string1)  );
+console.log( regex.test(string2)  );
+console.log( regex.test(string3)  );
+console.log( regex.test(string4)  );
+
+VM2428:9 false
+VM2428:10 false
+VM2428:11 false
+VM2428:12 false
+undefined
+var string1 = 'This is the longest bomb ever.';
+var string2 = 'This is shortest ever.';
+var string3 = 'Is this Mount Everest.';
+var string4 = 'This Sermon on the Mount';
+
+var regex = /ever.$/i;
+
+console.log( regex.test(string1)  );
+console.log( regex.test(string2)  );
+console.log( regex.test(string3)  );
+console.log( regex.test(string4)  );
+
+VM2429:9 true
+VM2429:10 true
+VM2429:11 false
+VM2429:12 false
+undefined
+var string1 = 'This is the longest bomb ever.';
+var string2 = 'This is shortest ever.';
+var string3 = 'Is this Mount Everest.';
+var string4 = 'This Sermon on the Mount';
+
+var regex = /ever\.$/i;
+
+console.log( regex.test(string1)  );
+console.log( regex.test(string2)  );
+console.log( regex.test(string3)  );
+console.log( regex.test(string4)  );
+
+VM2430:9 true
+VM2430:10 true
+VM2430:11 false
+VM2430:12 false
+undefined
+var string1 = 'This is the longest bomb ever.';
+var string2 = 'This is shortest ever.';
+var string3 = 'Is this Mouna Everest.';
+var string4 = 'This Sermon on the Mount';
+
+var regex = /Moun./i;
+
+console.log( regex.test(string1)  );
+console.log( regex.test(string2)  );
+console.log( regex.test(string3)  );
+console.log( regex.test(string4)  );
+
+VM2431:9 false
+VM2431:10 false
+VM2431:11 true
+VM2431:12 true
+undefined

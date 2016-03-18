@@ -1,0 +1,43 @@
+Arrays in JS
+
+var myArray =[];
+undefined
+myArray
+[]
+var daysOftheWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday'];
+undefined
+daysOftheWeek
+["Sunday", "Monday", "Tuesday", "Wednesday"]
+var myArray = [
+0, 1, 2,
+VM5652:4 Uncaught SyntaxError: Unexpected token }(…)InjectedScript._evaluateOn @ VM5239:875InjectedScript._evaluateAndWrap @ VM5239:808InjectedScript.evaluate @ VM5239:664
+var myArray = [
+0, 1, 2,
+'string1', 'string2', 'string3',
+true, false
+];
+undefined
+myArray
+[0, 1, 2, "string1", "string2", "string3", true, false]
+var counties = [
+'Belknap',
+'Strattford',
+'Carroll',
+'Rockingham'
+];
+undefined
+coun
+VM6108:2 Uncaught ReferenceError: coun is not defined(…)(anonymous function) @ VM6108:2InjectedScript._evaluateOn @ VM5239:875InjectedScript._evaluateAndWrap @ VM5239:808InjectedScript.evaluate @ VM5239:664
+counties
+["Belknap", "Strattford", "Carroll", "Rockingham"]
+var arrayOfStuff = [
+{'name' : 'value'},
+[1,2,3],
+true,
+'dandy'
+];
+undefined
+arrayOfStuff
+[Object, Array[3], true, "dandy"]
+arrayOfStuff.length;
+4

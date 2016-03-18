@@ -1,0 +1,59 @@
+TERSE Ifs: one-liners and the ternary operator
+
+
+CUPID IF ELSE STATEMENT
+
+var cherub = 'Cupid';
+// cherub = 'Some Other Guy';
+
+if(cherub === 'Cupid')  {
+   console.log("Ouch, an arrow!  Ooo, I'm in love!");
+   
+   
+} else {
+   console.log("I feel nothing!");
+ }
+ 
+ 
+ var cherub = 'Cupid';
+ //cherub = 'Some Other Guy';
+
+ if (cherub === 'Cupid')  console.log("Ouch, an arrow!  Ooo, I'm in love!");
+ 
+ 
+ 
+ 
+ 
+ 
+ CHRISTMAS IF ELSE STATEMENT
+ 
+ var wantForChristmas = 'puppy',
+	 gotForChristmas = 'puppy',
+	 cryAboutIt = false;
+	 
+ if (wantForChristmas === gotForChristmas) {
+ 
+	console.log('Yay! The Little Ninos are so happy!');
+	cryAboutIt = false;
+	
+ } else {
+	console.log('Oh no! Sad Christmas');
+	cryAboutIt = true;
+  
+ }
+ 
+ if (cryAboutIt) {
+	console.log('Child says: WAAAAAAAAAA');
+ }
+ 
+ 
+ 
+ 
+JOB STATEMENT IN TERSE IF ELSE FORM
+  
+ var animal = 'cat';
+ // animal = 'dog';
+ 
+ animal === 'cat' ? console.log('You will be a cat herder') : console.log('You will be a dog catcher');
+ 
+ //var job = (animal === 'cat' ? 'cat herder' : 'dog catcher');

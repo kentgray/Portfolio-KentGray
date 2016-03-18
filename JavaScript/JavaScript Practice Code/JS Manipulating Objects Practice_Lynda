@@ -1,0 +1,43 @@
+Manipulating Objects in JS
+
+var animal = {
+'genus' : 'bird',
+'species' : 'raven',
+'callType' : 'squawky',
+'quote' : "Nevermore",
+'maxOffspring' : 5,
+'noisy' : true,
+'deadly' : false
+}
+
+undefined
+animal.quote
+"Nevermore"
+animal."quote"
+VM3353:2 Uncaught SyntaxError: Unexpected string(…)InjectedScript._evaluateOn @ VM3246:875InjectedScript._evaluateAndWrap @ VM3246:808InjectedScript.evaluate @ VM3246:664
+animal["quote"]
+"Nevermore"
+animal.color = "black";
+"black"
+animal;
+Object {genus: "bird", species: "raven", callType: "squawky", quote: "Nevermore", maxOffspring: 5…}callType: "squawky"color: "black"deadly: falsegenus: "bird"maxOffspring: 5noisy: truequote: "Nevermore"species: "raven"__proto__: Object
+animal["where it live"] = "in a tree";
+"in a tree"
+animal.whereItLives = "in a tree";
+"in a tree"
+animal.whereItLives
+"in a tree"
+delet.animal.color;
+VM3904:2 Uncaught ReferenceError: delet is not defined(…)(anonymous function) @ VM3904:2InjectedScript._evaluateOn @ VM3246:875InjectedScript._evaluateAndWrap @ VM3246:808InjectedScript.evaluate @ VM3246:664
+delete.animal.color;
+VM3944:2 Uncaught SyntaxError: Unexpected token .(…)InjectedScript._evaluateOn @ VM3246:875InjectedScript._evaluateAndWrap @ VM3246:808InjectedScript.evaluate @ VM3246:664
+delete animal.color;
+true
+animal;
+Object {genus: "bird", species: "raven", callType: "squawky", quote: "Nevermore", maxOffspring: 5…}callType: "squawky"deadly: falsegenus: "bird"maxOffspring: 5noisy: truequote: "Nevermore"species: "raven"where it live: "in a tree"whereItLives: "in a tree"__proto__: Object
+var emptyObject = {};
+undefined
+emptyObject.isItReallyEmpty = false;
+false
+emptyObject
+Object {isItReallyEmpty: false}

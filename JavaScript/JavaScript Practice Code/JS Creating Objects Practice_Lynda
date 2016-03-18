@@ -1,0 +1,132 @@
+Creating Objects in JS
+
+
+{}
+undefined
+var emptyObject = {};
+undefined
+emptyObject;
+Object {}
+var notEmptyObject = {
+'label' : 'value',
+'label2' : 'value2'
+};
+undefined
+notEmptyObject
+Object {label: "value", label2: "value2"}
+var animal = {
+'genus' : 'bird',
+'species' : 'raven',
+'callType' : 'squawky'
+'quote' : "Nevermore",
+'maxOffspring' : 5,
+'noisy' : true,
+'deadly' : false
+}
+VM3176:6 Uncaught SyntaxError: Unexpected string(…)InjectedScript._evaluateOn @ VM2839:875InjectedScript._evaluateAndWrap @ VM2839:808InjectedScript.evaluate @ VM2839:664
+var animal = {
+'genus' : 'bird',
+'species' : 'raven',
+'callType' : 'squawky',
+'quote' : "Nevermore",
+'maxOffspring' : 5,
+'noisy' : true,
+'deadly' : false
+}
+undefined
+var animal = {
+'genus' : 'bird',
+'species' : 'raven',
+'callType' : 'squawky'
+'quote' : "Nevermore",
+'maxOffspring' : 5,
+'noisy' : true,
+'deadly' : false
+}
+
+var animal2 = {
+'genus' : 'bear',
+'species' : 'grizzly',
+'callType' : 'roar'
+'quote' : "",
+'maxOffspring' : 3,
+'noisy' : true,
+'deadly' : true
+}
+
+var bookofKnowledge = {
+'lunchtime' : '12:30PM',
+'the ultimate answer' : 42,
+'bestSong' : 'Lonnie\'s Lament',
+
+}
+VM3190:6 Uncaught SyntaxError: Unexpected string(…)InjectedScript._evaluateOn @ VM2839:875InjectedScript._evaluateAndWrap @ VM2839:808InjectedScript.evaluate @ VM2839:664
+var animal = {
+'genus' : 'bird',
+'species' : 'raven',
+'callType' : 'squawky'
+'quote' : "Nevermore",
+'maxOffspring' : 5,
+'noisy' : true,
+'deadly' : false
+}
+
+var animal2 = {
+'genus' : 'bear',
+'species' : 'grizzly',
+'callType' : 'roar'
+'quote' : "",
+'maxOffspring' : 3,
+'noisy' : true,
+'deadly' : true
+}
+
+var bookofKnowledge = {
+'lunchtime' : '12:30PM',
+'the ultimate answer' : 42,
+'bestSong' : 'Lonnie\'s Lament',
+'earth' : 'Mostly harmelss.'
+}
+VM3191:6 Uncaught SyntaxError: Unexpected string
+    at Object.InjectedScript._evaluateOn (<anonymous>:875:140)
+    at Object.InjectedScript._evaluateAndWrap (<anonymous>:808:34)
+    at Object.InjectedScript.evaluate (<anonymous>:664:21)InjectedScript._evaluateOn @ VM2839:875InjectedScript._evaluateAndWrap @ VM2839:808InjectedScript.evaluate @ VM2839:664
+animal
+Object {genus: "bird", species: "raven", callType: "squawky", quote: "Nevermore", maxOffspring: 5…}
+var animal2 = {
+'genus' : 'bear',
+'species' : 'grizzly',
+'callType' : 'roar'
+'quote' : "",
+'maxOffspring' : 3,
+'noisy' : true,
+'deadly' : true
+}
+VM3221:6 Uncaught SyntaxError: Unexpected string(…)InjectedScript._evaluateOn @ VM2839:875InjectedScript._evaluateAndWrap @ VM2839:808InjectedScript.evaluate @ VM2839:664
+var animal2 = {
+'genus' : 'bear',
+'species' : 'grizzly',
+'callType' : 'roar'
+'quote' : "bam sucka",
+'maxOffspring' : 3,
+'noisy' : true,
+'deadly' : true
+}
+VM3222:6 Uncaught SyntaxError: Unexpected string(…)InjectedScript._evaluateOn @ VM2839:875InjectedScript._evaluateAndWrap @ VM2839:808InjectedScript.evaluate @ VM2839:664
+var animal2 = {
+'genus' : 'bear',
+'species' : 'grizzly',
+'callType' : 'roar',
+'quote' : "bam sucka",
+'maxOffspring' : 3,
+'noisy' : true,
+'deadly' : true
+}
+undefined
+var bookofKnowledge = {
+'lunchtime' : '12:30PM',
+'the ultimate answer' : 42,
+'bestSong' : 'Lonnie\'s Lament',
+'earth' : 'Mostly harmelss.'
+}
+undefined

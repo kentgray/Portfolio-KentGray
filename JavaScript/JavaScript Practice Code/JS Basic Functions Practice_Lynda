@@ -1,0 +1,94 @@
+FUNCTION
+
+
+Basic Functions
+
+Initial Code to make Animal Sounds:
+console.log('Arf');
+console.log('Woof');
+console.log('Meow');
+console.log('Mooooooo');
+Arf
+VM1173:3 Woof
+VM1173:4 Meow
+VM1173:5 Mooooooo
+undefined
+
+
+
+
+Function created to wrap up all the lines of code into a single unit:
+function speak()  {
+	console.log('Arf');
+	console.log('Woof');
+	console.log('Meow');
+	console.log('Mooooooo');
+}
+undefined
+speak();
+VM1175:3 Arf
+VM1175:4 Woof
+VM1175:5 Meow
+VM1175:6 Mooooooo
+undefined
+
+
+
+
+Fuddify Function
+
+function fuddify(speech)  {
+	// if it's not a string, return an error message
+	if (typeof speech !== 'string')  return "Nice twy, wabbit!";
+	
+	// otherwise, make it sound like Elmer Fudd
+	speech = speech.replace(/r/g, 'w');
+	speech = speech.replace(/R/g, 'W');
+	speech = speech.replace(/l/g, 'w');
+	speech = speech.replace(/L/g, 'W');
+	return speech;
+}
+undefined
+
+
+fuddify("Be very quiet, I'm hunting rabbits.");
+"Be vewy quiet, I'm hunting wabbits."
+
+
+var utterance = fuddify("You screwy rabbit");
+undefined
+
+utterance
+"You scwewy wabbit"
+
+fuddify("I love to hunt rabbits.");
+"I wove to hunt wabbits."
+
+fuddify("Why can't I lick that rascally rabbit?");
+"Why can't I wick that wascawwy wabbit?"
+
+
+
+
+
+isOdd Function
+
+function isOdd(num) {
+	if (num % 2 === 0)  {
+		return false;
+	}  else  {
+		return true;
+	}
+}
+undefined
+
+
+Test function:
+
+isOdd(25)
+true
+
+isOdd(192888)
+false
+
+

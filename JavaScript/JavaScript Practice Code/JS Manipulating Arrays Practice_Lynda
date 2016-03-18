@@ -1,0 +1,43 @@
+Manipulating Arrays
+
+var counties = [
+     'Belknap',
+     'Strattford',
+     'Carroll',
+     'Rockingham'
+];
+undefined
+counties[0];
+"Belknap"
+counties[2];
+"Carroll"
+counties[2] = 'Cheshire';
+"Cheshire"
+counties;
+["Belknap", "Strattford", "Cheshire", "Rockingham"]
+counties[4] = 'Carroll';
+"Carroll"
+counties;
+["Belknap", "Strattford", "Cheshire", "Rockingham", "Carroll"]
+counties[counties.length] = 'Merrimack';
+"Merrimack"
+counties;
+["Belknap", "Strattford", "Cheshire", "Rockingham", "Carroll", "Merrimack"]
+counties.push("Coos");
+7
+counties;
+["Belknap", "Strattford", "Cheshire", "Rockingham", "Carroll", "Merrimack", "Coos"]
+counties.pop();
+"Coos"
+counties;
+["Belknap", "Strattford", "Cheshire", "Rockingham", "Carroll", "Merrimack"]
+delete counties[2];
+true
+counties;
+["Belknap", "Strattford", undefined × 1, "Rockingham", "Carroll", "Merrimack"]
+counties.splice(2, 1);
+[undefined × 1]
+counties;
+["Belknap", "Strattford", "Rockingham", "Carroll", "Merrimack"]
+counties.length;
+5

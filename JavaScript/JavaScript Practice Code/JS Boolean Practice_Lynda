@@ -1,0 +1,23 @@
+Booleans in JS
+
+
+true
+true
+false
+false
+True
+VM2468:2 Uncaught ReferenceError: True is not defined(…)(anonymous function) @ VM2468:2InjectedScript._evaluateOn @ VM2365:875InjectedScript._evaluateAndWrap @ VM2365:808InjectedScript.evaluate @ VM2365:664
+true
+true
+false
+false
+var myLocation = "Graz", myOtherLocation = "Los Angeles";
+undefined
+myLocation === myOtherLocation
+false
+myOtherLocation = "Graz";
+"Graz"
+myLocation === myOtherLocation
+true
+"="  are for assignments
+"===" are for comparisons

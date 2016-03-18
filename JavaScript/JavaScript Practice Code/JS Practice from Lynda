@@ -1,0 +1,36 @@
+var x = 32;
+undefined
+x:
+VM652:3 Uncaught SyntaxError: Unexpected token }(…)InjectedScript._evaluateOn @ VM579:875InjectedScript._evaluateAndWrap @ VM579:808InjectedScript.evaluate @ VM579:664
+x;
+32
+var whereAmI = "Graz, Austria";
+undefined
+whereAmI;
+"Graz, Austria"
+x = 45;
+45
+x;
+45
+whereAmI = 75;
+75
+whereAmI;
+75
+var monster1 = "grover", monster 2='Cookie Monster', monster3 = 'Animal';
+VM1180:2 Uncaught SyntaxError: Unexpected number(…)InjectedScript._evaluateOn @ VM579:875InjectedScript._evaluateAndWrap @ VM579:808InjectedScript.evaluate @ VM579:664
+var monster1 = "grover", monster 2 ='Cookie Monster', monster3 = 'Animal';
+VM1181:2 Uncaught SyntaxError: Unexpected number(…)InjectedScript._evaluateOn @ VM579:875InjectedScript._evaluateAndWrap @ VM579:808InjectedScript.evaluate @ VM579:664
+var monster1 = "grover", monster2 ='Cookie Monster', monster3 = 'Animal';
+undefined
+monster1;
+"grover"
+mon;
+VM1224:2 Uncaught ReferenceError: mon is not defined(…)(anonymous function) @ VM1224:2InjectedScript._evaluateOn @ VM579:875InjectedScript._evaluateAndWrap @ VM579:808InjectedScript.evaluate @ VM579:664
+monster2;
+"Cookie Monster"
+monster3;
+"Animal"
+var presidentofUSA = "Obama"; 
+undefined
+presidentofUSA;
+"Obama"

@@ -1,0 +1,69 @@
+For Loops: Sequential
+
+
+for (var i = 0; i < 10; i += 1) {
+	console.log(i);
+	}
+	
+	
+	
+// very common use case: loopping over an array.
+var pageNames = ['Home', 'About Us', 'Contact Us', 'JavaScript Playground', 'News', 'Blog'];
+
+for (i = 0; i < pageNames.length; i += 1)  {
+	if (document.title == pageNames[i])  {
+		console.log('We ARE here: ' + pageNames[i]);
+	} else {
+		console.log('We are not here: ' + pageNames[i]);
+	}
+}
+
+
+for (i = 0; i < pageNames.length; i += 1)  {
+	var currentPageTitle = pageNames[i];
+
+	if (document.title == currentPageTitle)  {
+		console.log('We ARE here: ' + currentPageTitle);
+	} else {
+		console.log('We are not here: ' + currentPageTitle);
+	}
+}
+
+
+
+var pageNames = ['Home', 'About Us', 'Contact Us', 'JavaScript Playground', 'News', 'Blog'];
+
+for (i = 0; i < pageNames.length; i += 1)  {
+	if (document.title == pageNames[i])  {
+		console.log('We ARE here: ' + pageNames[i]);
+	} else {
+		console.log('We are not here: ' + pageNames[i]);
+	}
+}
+VM105:8 We are not here: Home
+VM105:8 We are not here: About Us
+VM105:8 We are not here: Contact Us
+VM105:6 We ARE here: JavaScript Playground
+VM105:8 We are not here: News
+VM105:8 We are not here: Blog
+undefined
+
+
+
+
+for (i = 0; i < pageNames.length; i += 1)  {
+	var currentPageTitle = pageNames[i];
+
+	if (document.title == currentPageTitle)  {
+		console.log('We ARE here: ' + currentPageTitle);
+	} else {
+		console.log('We are not here: ' + currentPageTitle);
+	}
+}
+VM110:8 We are not here: Home
+VM110:8 We are not here: About Us
+VM110:8 We are not here: Contact Us
+VM110:6 We ARE here: JavaScript Playground
+VM110:8 We are not here: News
+VM110:8 We are not here: Blog
+undefined

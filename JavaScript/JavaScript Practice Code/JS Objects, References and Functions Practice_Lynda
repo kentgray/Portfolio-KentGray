@@ -1,0 +1,123 @@
+Objects and Functions
+
+Objects are passed by a reference into a function
+
+Function:
+
+function transmogrifier(calvin)  {
+	if (typeof calvin !== 'object')  {
+		console.log('argument is of the wrong type');
+		return;	
+	}
+
+	var randomNumber = Math.floor(Math.random() * 5) + 1;
+
+	switch(randomNumber) {
+		case 1 :
+			calvin.form = 'tyrannosaurus';
+			break;
+		case 2 :
+			calvin.form = 'grey wolf';
+			break;
+		case 3 :
+			calvin.form = 'bengal tiger';
+			break;
+		case 4 :
+			calvin.form = 'killer walrus';
+			break;
+		case 5 :
+			calvin.form = 'canary';
+			break;
+		default : 
+			// do nothing - he stays human
+			break;
+	}
+}
+
+
+var calvin = {
+	'name'  :  'Calvin',
+	'bestfriend'  :  'Hobbes',
+	'form'  :  'human boy'
+	}
+	
+	
+	function transmogrifyCopy(calvin)  {
+	if (typeof calvin !== 'object')  {
+		console.log('argument is of the wrong type');
+		return;	
+	}
+
+	var randomNumber = Math.floor(Math.random() * 5) + 1;
+	var newform = calvin.form; // by default, do not change
+
+	switch(randomNumber) {
+		case 1 :
+			newform = 'tyrannosaurus';
+			break;
+		case 2 :
+			newform = 'grey wolf';
+			break;
+		case 3 :
+			newform = 'bengal tiger';
+			break;
+		case 4 :
+			newform = 'killer walrus';
+			break;
+		case 5 :
+			newform = 'canary';
+			break;
+		default : 
+			// do nothing - he stays human
+			break;
+	}
+
+	
+		// return a new object that's just like calvin,
+		// but transmogified!
+		return {
+			'name'  : calvin.name,
+			'bestfriend' : calvin.bestFriend,
+			'form' : newform
+		};
+	}
+	
+	var newCalvin = transmogrifyCopy(calvin);
+	
+	calvin
+	Object {name: "Calvin", bestfriend: "Hobbes", form: "tyrannosaurus"}
+
+	newCalvin
+	Object {name: "Calvin", bestfriend: undefined, form: "grey wolf"}
+	
+	
+	
+
+Functions are Objects
+function speakSomething(what) {
+	for (var i = 0; i < 10; i += 1) {
+		console.log(what);
+	}
+}
+
+var speakSomething = function(what) {
+	for (var i = 0; i < 10; i += 1) {
+		console.log(what);
+	}
+}
+
+
+window.setTimeout(speakSomething, 5000);
+
+
+var obj = {
+'function' : function()  {
+console.log('Hello')
+}
+}
+undefined
+
+
+obj.function();
+VM2610:4 Hello
+undefined

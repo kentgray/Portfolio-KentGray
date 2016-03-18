@@ -1,0 +1,80 @@
+Arguments in Functions
+
+
+function speakSomething(what, howMany)  {
+	// this pattern works nicely for default values:
+	// check if the argument is undefined, and if it is, provide a default values
+	var what = (typeof what !== 'undefined') ? what : 'Default speech';
+	var howMany = (typeof howMany  !== 'undefined')  ?  howMany  :  10;
+	
+	for (var i = 0; i < howMany;  i += 1)  {
+		console.log(what + " (" + i + ")");
+	}
+}
+undefined
+
+
+function addingMachine()  {
+	// initialize the total we'll be returning
+	var total = 0;
+	
+	for (var i = 0;  i < arguments.length;  i += 1)  {
+		// grab the next number
+		var number = arguments[i];
+	
+	// check if the argument is a number.
+	// if so, add it to the running total
+	if (typeof number  === 'number')  {
+		total += number;
+	  }	
+	}
+
+	// done - return the total
+	return total;
+}
+undefined
+
+
+speakSomething('Hey hey', 5);
+VM1310:9 Hey hey (0)
+VM1310:9 Hey hey (1)
+VM1310:9 Hey hey (2)
+VM1310:9 Hey hey (3)
+VM1310:9 Hey hey (4)
+undefined
+
+
+speakSomething('Hey hey');
+VM1310:9 Hey hey (0)
+VM1310:9 Hey hey (1)
+VM1310:9 Hey hey (2)
+VM1310:9 Hey hey (3)
+VM1310:9 Hey hey (4)
+VM1310:9 Hey hey (5)
+VM1310:9 Hey hey (6)
+VM1310:9 Hey hey (7)
+VM1310:9 Hey hey (8)
+VM1310:9 Hey hey (9)
+undefined
+
+
+speakSomething();
+VM1310:9 Default speech (0)
+VM1310:9 Default speech (1)
+VM1310:9 Default speech (2)
+VM1310:9 Default speech (3)
+VM1310:9 Default speech (4)
+VM1310:9 Default speech (5)
+VM1310:9 Default speech (6)
+VM1310:9 Default speech (7)
+VM1310:9 Default speech (8)
+VM1310:9 Default speech (9)
+undefined
+
+
+addingMachine(1,2,3)
+6
+
+addingMachine(1,2,3,4,4,4,5,5,6,6,7)
+47
+

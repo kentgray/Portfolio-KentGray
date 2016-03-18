@@ -1,0 +1,31 @@
+'<a href="http://example/com">'
+"This is a string"
+"This is a string"
+"12"
+"12"
+12
+12
+'This is a string
+VM1662:2 Uncaught SyntaxError: Unexpected token ILLEGAL(…)InjectedScript._evaluateOn @ VM1502:875InjectedScript._evaluateAndWrap @ VM1502:808InjectedScript.evaluate @ VM1502:664
+This is a String'
+VM1719:2 Uncaught SyntaxError: Unexpected identifier(…)InjectedScript._evaluateOn @ VM1502:875InjectedScript._evaluateAndWrap @ VM1502:808InjectedScript.evaluate @ VM1502:664
+'<a href="">"
+VM1760:2 Uncaught SyntaxError: Unexpected token ILLEGAL(…)InjectedScript._evaluateOn @ VM1502:875InjectedScript._evaluateAndWrap @ VM1502:808InjectedScript.evaluate @ VM1502:664
+'<a href="">'
+"<a href="">"
+"This is Joe's \"favorite\" string"
+"This is Joe's "favorite" string"
+var myString = "This is my string. Leave it alone";
+undefined
+myString
+"This is my string. Leave it alone"
+myString.length;
+33
+myString.toUpperCase();
+"THIS IS MY STRING. LEAVE IT ALONE"
+"This is my string",length;
+0
+"This is my string", length;
+0
+"This is my string". length;
+17
