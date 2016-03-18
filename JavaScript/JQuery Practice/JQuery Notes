@@ -1,0 +1,122 @@
+JQuery Notes
+
+
+$ Function tells the code when to run
+Capitalization is crucial in JavaScript
+
+HTML code - Location of Script tags.
+The first <script> tag needs to load the jQuery library. 
+The second <script> tag loads our JavaScript program. 
+Both <script> tags are located right before the closing <body> tag.
+
+
+ //$("#third").css("background-color","red")
+ To identify ID's use the # followed by the id name.
+ To identify a class, use a "." followed by the class name.
+ Do not include this in quotation marks as a selector
+
+
+
+
+Selectors are used to select content and Filters are used to further refine the selected content.
+
+Altering Document Content
+wrap(): wrap the matched elements with the specified content
+wrapAll(): wrap content around the matched elements as a group
+unWrap(): remove the parents from the matched elements
+empty(): remove all the child elements from the matched elements
+remove(): removes elements from the page, including any embedded data and event handlers
+detach(): removes elements from the page, but maintains embedded data and event handlers
+replaceAll(): replaces the matched elements with the specified content
+replaceWith(): replaces matched elements with content or the results of a callback function
+
+Manipulating Attributes
+To read or change element attributes, use the attr() function. removeAttr() can be used to remove attributes
+attr(): get the value of an attribute
+attr(name, val): set the name attribute to val
+attr({ name: val ... }): set multiple attributes in one call
+removeAttr(name): remove the attribute from the element
+
+CSS Properties and Class Manipulation
+Getting and setting CSS information is accomplished via a set of dedicated jQuery functions.
+
+In addition to setting and retrieving individual CSS properties, there are methods for easily changing the CSS classes assigned to page elements that work in a cross-browser manner.
+
+css(): get or set CSS properties on the matched elements in a variety of ways
+hasClass(className): determine whether a page element has a certain class
+addClass(className | function): add the given CSS class to the elements in the matched set
+removeClass(className | function): remove the given CSS class from the elements in the matched set
+
+Using jQuery CSS Functions
+
+CSS has historically been one of the areas of big differences between browsers. 
+jQuery provides a set of cross-browser functions for working with CSS values that commonly appear in development situations.
+width() and height(): get or set the width/height of an element
+innerWidth() and innerHeight(): get or set the inner width/height of an element
+outerWidth() and outerHeight(): get the outer width/height of an element
+offset(): get coordinates of element relative to the document
+position(): get coordinates of element relative to the offset parent
+
+Using Event Helpers
+
+Some types of events are fairly common, and jQuery provides shorthand helper functions to make your code a little easier to write and read. Some examples:
+
+hover(): use this instead of mouseover and mouseleave events
+click(): listens for click events
+dblclick(): listens for double-click events
+resize(): fired on the window object when the browser window resizes
+
+Using the show and hide effects
+The show() and hide() functions are the simplest way to reveal and hide elements. This can be done with an optional animation.
+
+show(): Reveals the matched elements using an optional animation
+hide(): Hides the matched elements using an optional animation
+toggle(): Toggles the visible state of the matched elements using an optional animation
+
+
+
+Element Fading Routines
+
+Page elements can be faded in or out using a set of dedicated jQuery functions.
+
+fadeIn() fades the element in from being invisible
+fadeOut() fades the element out and removes it from layout
+fadeTo() fades the element to a specified opacity
+
+
+
+Using the slide functions
+
+Elements can also be shown and revealed via the slide functions. A common use case for this feature is when, for example, you have a message to display to the user that can be dismissed once read.
+
+slideUp(): animates the height of the matched elements to 0 (or whatever CSS min-height is set to). When the animation finishes, the display CSS property of the element is set to 'none' to remove the element from the page layout
+slideDown(): animates the height of the matched elements to reveal them
+slideToggle(): toggles the state of the matched elements, either sliding them up or down depending on their current state
+
+
+
+Animating an Element's Properties
+
+The animate() function provides a way to create smooth animations on the properties of an object.
+
+Click the buttons below this <div> element to see how various properties can be animated.
+
+
+Using the basic Ajax function
+
+The $.ajax() function is used to perform basic AJAX requests. It can be customized using a variety of parameters.
+
+
+The Ajax Helper Functions
+
+It turns out that certain scenarios, such as retrieving data via AJAX and then inserting the returned content into an element on the page, are pretty common in Web development.
+
+jQuery provides a set of helper functions that make these scenarios easier.
+
+
+Ajax Working With Different Data Types
+
+Using AJAX, it is possible to retrieve and work with different types of data. In this example, we will write jQuery code to work with JSON and XML data.
+
+For the XML, we'll use a local file that contains a simple XML structure.
+For the JSON example we'll use the public Flickr API to retrieve images that match a set of parameters.
