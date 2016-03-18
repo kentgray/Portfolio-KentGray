@@ -1,7 +1,7 @@
 ### A collection of coding creations by Kent Gray.
 ***
 
-I love creating solutions to problems whether it is personal or technical. Learning and coding are a lot like running marathons, its hard work but well worth the reward. Learn more about my professional experience on [LinkedIn](https://www.linkedin.com/in/kentmgray). I also have a [blog](http://kentgray.me/) about my experience in the development community.
+I love creating solutions to problems whether it is personal or technical. Learning and coding are a lot like competing in tennis tournaments, its a long term commitment but the satisfaction comes with each successful application. Learn more about my professional experience on [LinkedIn](https://www.linkedin.com/in/kentmgray). I also have a [blog](http://kentgray.me/) about my experience in the development community.
 
 This repository contains my solutions to programming challenges that I solved. 
 
@@ -17,11 +17,13 @@ This repository contains my solutions to programming challenges that I solved.
 * Built a script to create a [slide show](/JavaScript/Image-Slide-Show) of images of the solar system
 
 #### Ruby
-* Building a sample applications with Ruby
+* Built sample applications with Ruby
 
 #### C\# 
-* Next course after Python
-* Test
+* Built multiple basic applications such as a calculator and a computer setting manipulator.
+
+#### Python 
+* Current course I am studying
 
 #### Team Projects
 * Live-Project using C# in the .NET Framework
